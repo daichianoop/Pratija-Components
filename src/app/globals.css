@@ -2,20 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.alegreya-unique {
+    font-family: "Alegreya", serif;
+    font-weight: 400; /* You can change this to 700 for bold */
+    font-style: normal;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@font-face {
+    font-family: 'BuiltTilting'; /* Custom font name */
+    src: url('@/app/components/fonts/bt.otf'); /* Ensure this path is correct for your font file */
+    font-weight: bold; /* Consider adding variants; use bold for 700 if applicable */
+    font-style: normal; /* Use italic if your font includes an italic variant */
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+/* Additional styles using BuiltTilting */
+.built-tilting {
+    font-family: 'BuiltTilting', serif;
 }
